@@ -1,0 +1,20 @@
+{
+  "name": "graphql-next-trip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Trevor Litsey <trevorlitsey@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-lambda": "^2.11.0",
+    "axios": "^0.19.2",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "apollo-server": "^2.11.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
