@@ -2,12 +2,7 @@ const axios = require('axios');
 
 const get = (url) => axios(url).then((res) => res.data);
 
-const formatDepartureTimes = (data) =>
-  data.length ? data.map((d) => d.DepartureText).join(', ') : 'None';
-
-const fetchAndFormatDepartureTimes = (url) =>
-  axios(url).then((res) => formatDepartureTimes(res.data));
-
+// https://svc.metrotransit.org/nextrip
 const buildUrl = (pathname) => {
   return `https://svc.metrotransit.org/NexTrip${pathname}?format=json`;
 };
